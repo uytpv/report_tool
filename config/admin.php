@@ -300,7 +300,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '',
+    'login_background_image' => env('APP_URL').'/images/lut_lab_background_2020.jpg',
 
     /*
     |--------------------------------------------------------------------------
@@ -403,5 +403,9 @@ return [
     | https://github.com/laravel-admin-extensions.
     |
     */
-    'extensions' => [],
+    'extensions' => [
+        'media-manager' => [
+            'disk' => 'public'   // Points to the disk set in config/filesystem.php
+        ],
+    ],
 ];
