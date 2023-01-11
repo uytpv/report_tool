@@ -225,7 +225,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        
+        // Uy thêm class Helper để có thể call public
+        'DatabaseHelper' => App\Helpers\DatabaseHelper::class,
+        'FileHelper' => App\Helpers\FileHelper::class,
     ],
 
 ];
